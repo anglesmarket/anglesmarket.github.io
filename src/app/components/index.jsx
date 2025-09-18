@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
-import { Modal, LoginForm, SignupForm } from "./authComponents";
+import { Modal, LoginForm, SignupForm } from "./auth";
 import {
   ContactSection,
   Footer,
