@@ -9,6 +9,12 @@ import {
   LoginSignupSection,
   PreviewFeatures,
   SwitchModule,
+  TeamSection,
+  PartnersSection,
+  TestimonialsSection,
+  PressAwardsSection,
+  FAQSection,
+  LegalSection,
 } from "./main";
 
 export default function HomePage() {
@@ -34,6 +40,12 @@ export default function HomePage() {
       <HeroSection mode={mode} />
       <PreviewFeatures />
       <LoginSignupSection onLogin={handleLogin} onSignup={handleSignup} />
+      <TeamSection />
+      <PartnersSection />
+      <TestimonialsSection />
+      <PressAwardsSection />
+      <FAQSection />
+      <LegalSection />
       <ContactSection />
       <Footer />
       <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
