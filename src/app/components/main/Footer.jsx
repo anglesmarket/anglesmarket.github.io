@@ -1,4 +1,8 @@
 export function Footer() {
+  // ...existing code...
+  // Add Next.js Link import
+  // eslint-disable-next-line @next/next/no-html-link-for-pages
+  const Link = require('next/link').default;
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-10 mt-16 animate-fade-in">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -16,11 +20,11 @@ export function Footer() {
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Navigation</h3>
           <ul className="flex flex-col gap-2 text-sm">
-            <li><a href="#about" className="hover:text-blue-400 transition">About</a></li>
-            <li><a href="#features" className="hover:text-blue-400 transition">Features</a></li>
-            <li><a href="#pricing" className="hover:text-blue-400 transition">Pricing</a></li>
-            <li><a href="#careers" className="hover:text-blue-400 transition">Careers</a></li>
-            <li><a href="#blog" className="hover:text-blue-400 transition">Blog</a></li>
+            <li><Link href="/about" className="hover:text-blue-400 transition">About</Link></li>
+            <li><Link href="/features" className="hover:text-blue-400 transition">Features</Link></li>
+            <li><Link href="/pricing" className="hover:text-blue-400 transition">Pricing</Link></li>
+            <li><Link href="/careers" className="hover:text-blue-400 transition">Careers</Link></li>
+            <li><Link href="/blog" className="hover:text-blue-400 transition">Blog</Link></li>
           </ul>
         </div>
 
@@ -28,11 +32,11 @@ export function Footer() {
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Resources</h3>
           <ul className="flex flex-col gap-2 text-sm">
-            <li><a href="#docs" className="hover:text-green-400 transition">Documentation</a></li>
-            <li><a href="#support" className="hover:text-green-400 transition">Support</a></li>
-            <li><a href="#privacy" className="hover:text-green-400 transition">Privacy Policy</a></li>
-            <li><a href="#terms" className="hover:text-green-400 transition">Terms of Service</a></li>
-            <li><a href="#contact" className="hover:text-green-400 transition">Contact Us</a></li>
+            <li><Link href="/docs" className="hover:text-green-400 transition">Documentation</Link></li>
+            <li><Link href="/support" className="hover:text-green-400 transition">Support</Link></li>
+            <li><Link href="/privacy" className="hover:text-green-400 transition">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-green-400 transition">Terms of Service</Link></li>
+            <li><Link href="/contact" className="hover:text-green-400 transition">Contact Us</Link></li>
           </ul>
           <div className="mt-6">
             <h4 className="text-md font-semibold text-white mb-2">Contact</h4>
