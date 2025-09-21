@@ -1,10 +1,10 @@
-import Article from "../app/components/layout/Article";
-
 export default function CareersPage() {
   return (
-    <Article>
+    <>
       <h1>Careers</h1>
-      <p>Join our team and help shape the future of investing and innovation.</p>
+      <p>
+        Join our team and help shape the future of investing and innovation.
+      </p>
       <section>
         <h2>Open Positions</h2>
         <ul>
@@ -24,7 +24,10 @@ export default function CareersPage() {
           <li>Inclusive, fun, and collaborative team</li>
         </ul>
       </section>
-      <div>To apply, email your resume to <a href="mailto:careers@anglesbull.com">careers@anglesbull.com</a></div>
-    </Article>
+      <div>
+        To apply, email your resume to{" "}
+        <a href="mailto:careers@anglesbull.com">careers@anglesbull.com</a>
+      </div>
+    </>
   );
 }

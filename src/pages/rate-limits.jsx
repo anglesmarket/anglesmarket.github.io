@@ -1,15 +1,16 @@
-import Article from "../app/components/layout/Article";
-
 export default function RateLimitsPage() {
   return (
-    <Article>
+    <>
       <h1>Rate Limits & Best Practices</h1>
-      <p>Information about API rate limits and recommended best practices for developers.</p>
+      <p>
+        Information about API rate limits and recommended best practices for
+        developers.
+      </p>
       <ul>
         <li>Rate limit policies</li>
         <li>Handling rate limit errors</li>
         <li>Optimizing API usage</li>
       </ul>
-    </Article>
+    </>
   );
 }

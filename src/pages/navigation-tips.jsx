@@ -1,8 +1,6 @@
-import Article from "../app/components/layout/Article";
-
 export default function NavigationTipsPage() {
   return (
-    <Article>
+    <>
       <h1>Platform Navigation Tips</h1>
       <p>Tips and tricks for efficiently navigating Angles of Bull Market.</p>
       <ul>
@@ -10,6 +8,6 @@ export default function NavigationTipsPage() {
         <li>Finding opportunities</li>
         <li>Using search and filters</li>
       </ul>
-    </Article>
+    </>
   );
 }

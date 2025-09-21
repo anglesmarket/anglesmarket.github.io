@@ -1,10 +1,10 @@
-import Article from "../app/components/layout/Article";
-
 export default function BlogPage() {
   return (
-    <Article>
+    <>
       <h1>Blog</h1>
-      <p>Insights, news, and stories from the world of investing and startups.</p>
+      <p>
+        Insights, news, and stories from the world of investing and startups.
+      </p>
       <section>
         <h2>Latest Posts</h2>
         <ul>
@@ -14,7 +14,10 @@ export default function BlogPage() {
           <li>Community Success Stories</li>
         </ul>
       </section>
-      <div>Want to contribute? Email <a href="mailto:blog@anglesbull.com">blog@anglesbull.com</a></div>
-    </Article>
+      <div>
+        Want to contribute? Email{" "}
+        <a href="mailto:blog@anglesbull.com">blog@anglesbull.com</a>
+      </div>
+    </>
   );
 }
